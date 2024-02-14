@@ -1,0 +1,24 @@
+/* Apply flexbox to the games container */
+.games-container {
+    display: flex;
+    justify-content: space-around; /* Distribute space around items */
+}
+
+/* Style each game */
+.game {
+    width: 45%; /* Adjust width as needed */
+    padding: 20px;
+    border: 1px solid #ccc; /* Add border for visual separation */
+}
+
+/* Media query for responsive design */
+@media (max-width: 768px) {
+    .games-container {
+        flex-direction: column; /* Switch to a single column layout on smaller screens */
+        align-items: center; /* Center items horizontally */
+    }
+    .game {
+        width: 100%; /* Full width for single column layout */
+        margin-bottom: 20px; /* Add margin between games */
+    }
+}
